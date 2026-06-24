@@ -1,0 +1,8 @@
+.ret{
+  color: #ffffff;
+}
+.image{
+  width: 100%;
+  height: 680px;
+  object-fit: cover;
+}
