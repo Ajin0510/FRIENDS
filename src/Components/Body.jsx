@@ -9,6 +9,7 @@ export default function Body() {
    const [name,setName]=useState("AJIN");
    const[inpu,setInpu]=useState("");
    const[display,setDisplay]=useState("");
+   const[namefield,setNamefield]=useState("");
 
    
    
@@ -77,6 +78,23 @@ It is a long established fact that a reader will be distracted by the readable c
 
 
             </div>
+
+        </div>
+
+        <div className='row '   style={{marginTop:100}}>
+            <h2 className='text-center'>Exercise 1: Display Input Value</h2>
+
+            <div className='col-md-12  d-flex justify-content-center' >
+                              
+                            <input type='text' placeholder='enter name' style={{marginTop:50}} value={namefield} onChange={(e)=>setNamefield(e.target.value)}  />
+
+                          
+
+            </div><h4 className='text-center' style={{marginTop:25}}>Enter name is:{namefield}</h4>
+
+
+
+
 
         </div>
       

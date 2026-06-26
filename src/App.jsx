@@ -4,6 +4,8 @@ import Body from './Components/Body'
 import Footer from './Components/Footer'
 import Login from './Components/Login'
 import Registration from './Components/Registration'
+import Usestate from './Components/Usestate'
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 export default function App() {
@@ -11,10 +13,12 @@ export default function App() {
     <BrowserRouter>
       <Routes>
            <Route path="/rrr" element={<Header />} />
-        <Route path="/body" element={<Body />} />
+        <Route path="/" element={<Body />} />
         <Route path="/footer" element={<Footer />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
+        <Route path="/usestate" element={<Usestate />} />
+
 
 
       </Routes>
